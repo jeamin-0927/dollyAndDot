@@ -1,6 +1,5 @@
 float wait = 1000;
 int pinAvailable[14] = { 0 };
-// 핀 사용하는 위치의 pinAvailable 값을 1로 변경
 void setup() {
   Serial.begin(9600);
 }
