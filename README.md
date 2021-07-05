@@ -34,7 +34,7 @@
 
 ## 프로그래밍 및 소스코드
 
-아두이노 소스코드는 [여기](https://github.com/jeamin-0927/dollyAndDot/blob/main/ino/WaterPump/WaterPump.ino)에서 확인 가능
+아두이노 소스코드는 [여기](https://github.com/jeamin-0927/dollyAndDot/tree/main/ino)에서 확인 가능
 
 아두이노 시리얼 모니터에서 명령어 입력하여 사용 가능함
 
