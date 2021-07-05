@@ -1,15 +1,8 @@
 float wait = 1000;
 int pinAvailable[14] = { 0 };
 // 핀 사용하는 위치의 pinAvailable 값을 1로 변경
-
 void setup() {
   Serial.begin(9600);
-  for(int i = 0; i < 14; i++){
-    if(pinAvailable[i] == 1){
-      pinMode(i, OUTPUT);
-      digitalWrite(i, LOW);
-    }
-  }
 }
 void command(String data){
   Serial.println();
