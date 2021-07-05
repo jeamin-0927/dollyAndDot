@@ -32,7 +32,7 @@
 
 
 
-### 소스코드 설명
+### 프로그래밍 및 소스코드
 
 아두이노 소스코드는 [여기](https://github.com/jeamin-0927/dollyAndDot/blob/main/ino/WaterPump/WaterPump.ino)에서 확인 가능
 
@@ -65,3 +65,8 @@ pump time 시간(ms) : tick에서 실행할 시간을 설정합니다. (기본 1
 pin input 핀번호 : 핀번호의 핀을 INPUT으로 설정합니다.
 
 pin output 핀번호 : 핀번호의 핀을 OUTPUT으로 설정합니다.
+
+
+
+### 모델링 및 프린트
+
