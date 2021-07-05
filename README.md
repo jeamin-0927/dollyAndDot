@@ -76,3 +76,5 @@ pin output 핀번호 : 핀번호의 핀을 OUTPUT으로 설정합니다.
 
 모델링 파일은 [여기](https://github.com/jeamin-0927/dollyAndDot/tree/main/blend)에서 확인
 
+
+
