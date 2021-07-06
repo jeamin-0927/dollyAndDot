@@ -92,7 +92,7 @@ void command(String data){
 }
 void loop() {
   if(Serial.available()){
-    String data = Serial.readStringUntil('\n');
+    String data = Serial.readString();
     command(data);
   }
 }
