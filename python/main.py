@@ -1,6 +1,6 @@
 import serial
 import speech_recognition as sr
-
+import os
 
 # pip install pyserial
 # pip install SpeechRecognition
@@ -23,8 +23,6 @@ while True:
     if not line: break
     good.append(line.strip('\n'))
 
-print("좋은말 데이터 : ", end='')
-print(good)
 
 bad = []
 badTxt = open("bad.txt", 'r')
@@ -33,12 +31,30 @@ while True:
     if not line: break
     bad.append(line.strip('\n'))
 
-print("나쁜말 데이터 : ", end='')
-print(bad)
 
 while True:
     if ser.readable():
-        print("\n> 음성 인식 시작")
+        os.system('cls')
+        print("좋은말 데이터 : ", end='')
+        print(good)
+        print("나쁜말 데이터 : ", end='')
+        print(bad)
+        print("\n> 언어 데이터 리로드")
+        good = []
+        goodTxt = open("good.txt", 'r')
+        while True:
+            line = goodTxt.readline()
+            if not line: break
+            good.append(line.strip('\n'))
+
+        bad = []
+        badTxt = open("bad.txt", 'r')
+        while True:
+            line = badTxt.readline()
+            if not line: break
+            bad.append(line.strip('\n'))
+
+        print("> 음성 인식 시작")
         said = " "
         r = sr.Recognizer()
         with sr.Microphone() as source:
@@ -61,6 +77,10 @@ while True:
 
         for i in bad:
             if i in txt:
-                print('>> 나쁜 말 감지, 8번 펌프 실행')
+                print('> 나쁜 말 감지, 8번 펌프 실행')
                 inp = "p tick 8"
                 ser.write(inp.encode('utf-8'))
+    print('다음 인식 Enter / 취소 아무 키 + Enter ', end='')
+    icp = input()
+    if icp is not '':
+        break
