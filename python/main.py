@@ -4,10 +4,9 @@ import speech_recognition as sr
 
 # pip install pyserial
 # pip install SpeechRecognition
-# pip install pyaudio
 # pip install gTTS
-# pip install
 # pyaudio wheel file
+# pip install 휠파일
 # https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 print('COM 설정 : ', end='')
