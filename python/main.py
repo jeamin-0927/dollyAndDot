@@ -68,18 +68,22 @@ while True:
                 print("> 음성 인식 실패")
 
         txt = said
-
-        for i in good:
-            if i in txt:
-                print('> 좋은 말 감지, 9번 펌프 실행')
-                inp = "p tick 9"
-                ser.write(inp.encode('utf-8'))
+        badW = 0
 
         for i in bad:
             if i in txt:
                 print('> 나쁜 말 감지, 8번 펌프 실행')
                 inp = "p tick 8"
                 ser.write(inp.encode('utf-8'))
+                badW = 1
+
+        if badW is 0:
+            for i in good:
+                if i in txt:
+                    print('> 좋은 말 감지, 9번 펌프 실행')
+                    inp = "p tick 9"
+                    ser.write(inp.encode('utf-8'))
+
     print('다음 인식 Enter / 취소 아무 키 + Enter ', end='')
     icp = input()
     if icp is not '':
