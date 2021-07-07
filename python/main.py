@@ -91,7 +91,3 @@ while True:
 
     print('\n ', end='')
     os.system('pause')
-    # print('\n 다음 인식 Enter / 취소 아무 키 + Enter ', end='')
-    # icp = input()
-    # if icp != '':
-    #     break
