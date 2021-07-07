@@ -34,17 +34,19 @@
 
 ## ① 프로그래밍 및 소스코드
 
-1. 음성인식 및 통신
-    음성인식은 Python의 Speech_recognition 모듈을 사용하였다.
-    음성 입력을 받아, 착한 말인지 나쁜 말인지 구분하여 Serial로 아두이노와 통신한다.
-    착한 말과 나쁜 말은 머신러닝을 통하여 학습시켰다.
-    음성인식 및 통신 코드는 [여기](https://chicken-moo.com/maker/pythonCode)에서 확인할 수 있다.
+### 음성인식 및 통신
+
+ 음성인식은 Python의 Speech_recognition 모듈을 사용하였다.
+ 음성 입력을 받아, 착한 말인지 나쁜 말인지 구분하여 Serial로 아두이노와 통신한다.
+ 착한 말과 나쁜 말은 머신러닝을 통하여 학습시켰다.
+ 음성인식 및 통신 코드는 [여기](https://chicken-moo.com/maker/pythonCode)에서 확인할 수 있다.
 
 
 
-2. 아두이노 모터 제어
-    아두이노에 관련된 모든 제어는 Serial 모니터를 사용하여 제어할 수 있게 프로그래밍하여, 다른 프로그래밍 언어(Python 등)에서 사용할 수 있게 하였다.
-    아두이노 모터 제어 코드는 [여기](https://chicken-moo.com/maker/arduinoCode)에서 확인할 수 있다.
+### 아두이노 모터 제어
+
+아두이노에 관련된 모든 제어는 Serial 모니터를 사용하여 제어할 수 있게 프로그래밍하여, 다른 프로그래밍 언어(Python 등)에서 사용할 수 있게 하였다.
+아두이노 모터 제어 코드는 [여기](https://chicken-moo.com/maker/arduinoCode)에서 확인할 수 있다.
 
 
 
