@@ -40,14 +40,14 @@
  음성인식은 Python의 Speech_recognition 모듈을 사용하였다.
  음성 입력을 받아, 착한 말인지 나쁜 말인지 구분하여 Serial로 아두이노와 통신한다.
  착한 말과 나쁜 말은 머신러닝을 통하여 학습시켰다.
- 음성인식 및 통신 코드는 [여기](https://chicken-moo.com/maker/pythonCode)에서 확인할 수 있다.
+ 음성인식 및 통신 코드는 [여기](https://chicken-moo.com/.old/maker/pythonCode)에서 확인할 수 있다.
 
 
 
 ### 아두이노 모터 제어
 
 아두이노에 관련된 모든 제어는 Serial 모니터를 사용하여 제어할 수 있게 프로그래밍하여, 다른 프로그래밍 언어(Python 등)에서 사용할 수 있게 하였다.
-아두이노 모터 제어 코드는 [여기](https://chicken-moo.com/maker/arduinoCode)에서 확인할 수 있다.
+아두이노 모터 제어 코드는 [여기](https://chicken-moo.com/.old/maker/arduinoCode)에서 확인할 수 있다.
 
 
 
@@ -85,4 +85,4 @@ pin output 핀번호 : 핀번호의 핀을 OUTPUT으로 설정합니다.
  모델의 안쪽에 구멍을 뚫어 아두이노 회로판과 모터가 들어갈 수 있게 디자인하였고,
  눈과 입에 구멍을 뚫어 알코올 소독제가 나올 수 있게 하였다.
 
-모델링 파일은 [여기](https://chicken-moo.com/maker/blender)에서 확인할 수 있다.
+모델링 파일은 [여기](https://chicken-moo.com/.old/maker/blender)에서 확인할 수 있다.
